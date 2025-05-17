@@ -1,0 +1,16 @@
+{
+    "name": "TMphelane-AIQX-app",
+    "version": "1.0.0",
+    "description": "T Mphelane AIQX Tech Assessment",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "engines": {
+      "node": ">=18.0.0"
+    },
+    "dependencies": {
+      "express": "^4.18.2"
+    }
+  }
+  

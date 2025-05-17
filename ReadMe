@@ -1,0 +1,46 @@
+Scripting and Automation
+1. Requirement: 
+Write a script (Bash or Python) that automates the deployment of a simple web application. The script should:
+Install necessary dependencies.
+Configure the application.
+Start the server.
+Deliverable: A functional script that successfully deploys the application.
+
+# --- Commands
+# Execution
+chmod +x deploy-to-azure.sh ## make the script executable
+./deploy-app.sh ## run the script from the app's directory
+
+Please ensure you are logged in to Azure using using az login
+Your web app is in the directory with a package.json.
+
+# --------------
+2. Infrastructure as Code:
+Using Terraform, create a script that provisions a virtual machine on a cloud provider of your choice.
+The script should include:
+- Configuration for networking.
+- security groups.
+- any other necessary resources.
+Deliverable: A Terraform script that provisions the specified resources.
+# ---- Commands
+Terraform commands:
+  terraform init
+  terraform plan
+  terraform apply
+  terraform destroy
+# --------------
+3. Containerisation and Orchestration:
+Deploy a sample application in a docker container and create K8s deployment to manage the container.
+This should include:
+- Dockerfile for the application.
+- kubernetes deployment YAML file.
+Deliverable: The Dockerfile and kubernetes deployment Configuration
+#-- Commands
+docker build -t aiqx-g05:local .
+kubectl apply -f .
+kubectl get deployment,svc -n aiqx
+
+4. Monitoring and Logging
+Requirement: Set up a monitoring dashboard using Prometheus and Grafana to track the performance metrics of the sample application. 
+Additionally, configure logging to capture and analyse log data. You are free to choose the stack e.g. ELK stack, Azure Log analytics etc.
+Deliverable: Configuration files for Prometheus and Grafana, along with logging setup instructions.

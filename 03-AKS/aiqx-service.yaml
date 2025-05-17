@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: aiqx-app
+  namespace: aiqx
+spec:
+  type: LoadBalancer
+  selector:
+    app: aiqx-app
+  ports:
+  - port: 80
+    targetPort: 80
+    protocol: TCP
+

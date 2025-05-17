@@ -1,0 +1,8 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /var/log/aiqx_app/*.log
+
+output.logstash:
+  hosts: ["localhost:5044"]
